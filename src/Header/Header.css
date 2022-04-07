@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Bold";
+  src: url(../Fonts/SourceSansPro-Bold.ttf);
+}
+@font-face {
+  font-family: "Medium";
+  src: url(../Fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: "Light";
+  src: url(../Fonts/SourceSansPro-Light.ttf);
+}
+@font-face {
+  font-family: "SemiBold";
+  src: url(../Fonts/SourceSansPro-SemiBold.ttf);
+}
+@media only screen and (max-width: 830px) {
+  .login{
+    width: 70vw !important;
+    padding-bottom: 60px !important;
+    padding-right: 60px  !important;
+    padding-left: 60px   !important;
+  }
+  .AboutDesktopView {
+    display: none !important;
+  }
+  .ContactDesktopView {
+    margin-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .login{
+    width: 60vw !important;
+    padding-bottom: 80px !important;
+    padding-right: 80px  !important;
+    padding-left: 80px   !important;
+  }
+  .cards{
+    flex-direction: column !important;
+  }
+  .sellerCard{
+    width: 90vw !important;
+    margin-left: 'auto'  !important;
+    margin-right: 'auto' !important;
+  }
+  .footerItem{
+    display: none !important;
+  }
+  .cardSale{
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+  }
+  .factor{
+    width: 80vw !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+.carsols{
+  flex-direction: column !important;
+}
+.login{
+  width: 80vw !important;
+  padding-bottom: 40px !important;
+  padding-right: 40px  !important;
+  padding-left: 40px   !important;
+}
+.carousel , .carsoool{
+  margin-bottom: 4% !important;
+  width: 80% !important ;
+  height: 50% ;
+}
+}
+@media only screen and (max-width: 745px) {
+  .AboutDesktopView {
+    display: none !important;
+  }
+  .ContactDesktopView {
+    display: none !important;
+  }
+  .login{
+    width: 90vw !important;
+    padding: 20px !important;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+* {
+  font-family: "Bold";
+}
+
+.ContactDesktopView {
+    background-color: white !important;
+  border: none !important;
+  color: #490B3D !important;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.AboutDesktopView {
+    background-color: white !important;
+    border: none !important;
+    color: #490B3D !important;
+}
+.headerImg {
+  width: 100px;
+  height: 100px;
+}
+.headerImgMobile{
+    width: 80px;
+    height: 80px;
+}
+.end {
+  margin-left: auto;
+}
+.Card {
+  width: 25px;
+  height: 25px;
+}
+.searchIcon {
+  width: 25px;
+  height: 25px;
+  color: #490B3D !important;
+}
+.search {
+  width: 200px;
+  animation: typing 1s forwards;
+}
+.FQ {
+    background-color: white !important;
+    border: none !important;
+    color: #490B3D !important;
+}
+.buttonsNav {
+  margin-top: 10px;
+}
+.Home , .Contact , .About {
+  background-color: white !important;
+  border: none !important;
+  color: #490B3D !important;
+}
+
+.Login {
+  background-color: #490B3D !important;
+  border: none !important;
+}
+.SignUp {
+  background-color: #F1B814 !important;
+  border: none !important;
+}
+.ImgNav {
+  width: 70px;
+  height: 70px;
+}
+.subtitle {
+  font-family: "Light";
+  font-size: small;
+}
+.all{
+    background: white
+}
+.account{
+    width: 35px;
+    color: #490B3D !important;
+    height: 35px;
+}
+.drop{
+    color: #490B3D !important;
+}
+.LogOut{
+    color: red;
+}
+.Loading{
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel , .carsoool{
+  /* margin-bottom: 4% !important; */
+  width: 50% ;
+  height: 50% ;
+  margin-left: auto;
+  margin-right:  auto;
+}
+.carsols{
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #F1B814;
+  border-radius: 10px;
+}
+.Hover{
+  margin-top: 5% !important;
+}
+.Hover:hover{
+  transform: scale(1.02);
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.sellerCard{
+  width: 20rem;
+  background-color: rgb(247, 247, 247) !important;  
+}
+.footer{
+  border:none !important;
+  background-color: #f1ba1475 !important;
+}
+.footerItem{
+  display: flex;
+  justify-content: space-between;
+}
+.back{
+  margin-bottom: 20px;
+  background-color: #490B3D !important;
+  border: none !important
+}
+.count{
+  display: flex;
+  width: 110px;
+  box-shadow: 2px 2px 5px #490B3D;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.searchList{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.searchList:hover{
+  transform: scale(1.02);
+}
+.factor{
+  height: 50px;
+  width: 50vw;
+  border: none !important
+}
+.cardSale{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.empty{
+margin-left: auto !important; 
+margin-right: auto !important;
+}
+.login{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F1B814 !important;
+  width: 50vw;
+  border-radius: 8px;
+  height: max-content;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-bottom: 40px;
+}
+.Name{
+  background-color: white !important;
+  border: none !important;
+  color: gray !important;
+  font-size: larger !important;
+  margin-bottom: 20px;
+}
+.Stepper{
+  background-color: #490B3D !important;
+  border: none !important;
+  border-radius: 50% !important;
+}
+.StepperSuccess{
+  border: none !important;
+  border-radius: 50% !important;
+}
+.orderlist{
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: column; 
+}
