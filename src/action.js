@@ -34,7 +34,7 @@ import {
 export const ActionProducts = () => async (dispatch) => {
   try {
     dispatch({ type: REQUEST_ALL_PRODUCT });
-    const { data } = await axios.get("http://45.138.24.15:9000/api/products");
+    const { data } = await axios.get("http://95.216.184.20:9000/api/products");
     dispatch({ type: SUCCESS_ALL_PRODUCT, payload: data });
   } catch (error) {
     dispatch({ type: FAILED_ALL_PRODUCT, payload: error });
@@ -45,7 +45,7 @@ export const ActionOneProduct = (x) => async (dispatch) => {
   try {
     dispatch({ type: REQUEST_One_PRODUCT });
     const { data } = await axios.get(
-      `http://45.138.24.15:9000/api/products/${x}`
+      `http://95.216.184.20:9000/api/products/${x}`
     );
     dispatch({ type: SUCCESS_One_PRODUCT, payload: data });
   } catch (error) {
@@ -88,7 +88,7 @@ export const ActionLogOut = (x) => (dispatch) => {
 export const ActionSignUp = (name, email, password) => async (dispatch) => {
   try {
     dispatch({ type: REQUEST_SIGN_UP });
-    const { data } = await axios.post("http://45.138.24.15:9000/api/users", {
+    const { data } = await axios.post("http://95.216.184.20:9000/api/users", {
       name: name,
       email: email,
       password: password,
@@ -105,7 +105,7 @@ export const ActionLogIn = (UserName, password) => async (dispatch) => {
   try {
     dispatch({ type: REQUEST_LOG_IN });
     const { data } = await axios.post(
-      "http://45.138.24.15:9000/api/users/login",
+      "http://95.216.184.20:9000/api/users/login",
       { email: UserName, password: password }
     );
     dispatch({ type: SUCCESS_LOG_IN, payload: data });
@@ -133,7 +133,7 @@ export const ActionCreateOrder = (order) => async (dispatch) => {
   try {
     dispatch({ type: ORDER_CREATE_REQUEST });
     const { data } = await axios.post(
-      "http://45.138.24.15:9000/api/orders",
+      "http://95.216.184.20:9000/api/orders",
       order,
       {
         headers: {
@@ -151,7 +151,7 @@ export const ActionUserInfo = () => async (dispatch) => {
   try {
     dispatch({ type: USER_INFO_REQUEST });
     const { data } = await axios.get(
-      "http://45.138.24.15:9000/api/users/profile",
+      "http://95.216.184.20:9000/api/users/profile",
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -168,7 +168,7 @@ export const ActionChangeInfo = (name , email , pass) => async (dispatch) => {
   try {
     dispatch({ type: CHANGE_INFO_REQUEST });
     const { data } = await axios.put(
-      "http://45.138.24.15:9000/api/users/profile",
+      "http://95.216.184.20:9000/api/users/profile",
       { name: name, email: email, password: pass },
       {
         headers: {
@@ -186,7 +186,7 @@ export const ActionAllOrders = () => async (dispatch) => {
   try {
     dispatch({ type: ALL_ORDERS_REQUEST });
     const { data } = await axios.get(
-      "http://45.138.24.15:9000/api/orders/myorders",
+      "http://95.216.184.20:9000/api/orders/myorders",
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -203,7 +203,7 @@ export const ActionOneOrders = (id) => async (dispatch) => {
   try {
     dispatch({ type: ONE_ORDERS_REQUEST });
     const { data } = await axios.get(
-      `http://45.138.24.15:9000/api/orders/${id}`,
+      `http://95.216.184.20:9000/api/orders/${id}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
